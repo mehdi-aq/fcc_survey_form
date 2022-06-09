@@ -1,0 +1,40 @@
+#group-animation-style {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "input-traditional label-traditional"
+        "input-anime label-anime"
+        "input-cutout label-cutout"
+        "input-claymotion label-claymotion";
+}
+#group-animation-style > h3 {
+    grid-area: header;
+    text-align: center;
+}
+#traditional-animation {
+    grid-area: input-traditional;
+}
+#label-traditional-animation {
+    grid-area: label-traditional;
+}
+#anime {
+    grid-area: input-anime;
+}
+#label-anime {
+    grid-area: label-anime;
+}
+#cutout {
+    grid-area: input-cutout;
+}
+#label-cutout {
+    grid-area: label-cutout;
+}
+#claymotion {
+    grid-area: input-claymotion;
+}
+#label-claymotion {
+    grid-area: label-claymotion;
+}
+#group-animation-style > input {
+    justify-self: end;
+}

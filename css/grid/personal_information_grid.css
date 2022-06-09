@@ -1,0 +1,36 @@
+#group-personal-information {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "name-label name"
+        "email-label email"
+        "number-label number";
+    justify-items: center;
+    padding-bottom: 1em;
+    justify-self: center;
+}
+#group-personal-information > h3 {
+    grid-area: header;
+}
+#name-label {
+    grid-area: name-label;
+}
+#name {
+    grid-area: name;
+}
+#email-label {
+    grid-area: email-label;
+}
+#email {
+    grid-area: email;
+}
+#number-label {
+    grid-area: number-label;
+}
+#number {
+    grid-area: number;
+}
+
+#group-personal-information > input, label {
+    justify-self: start;
+}

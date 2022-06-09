@@ -1,0 +1,12 @@
+#group-favorite-color-style {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+}
+#dropdown-label, #dropdown {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    justify-self: stretch;
+}

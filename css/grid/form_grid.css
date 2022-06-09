@@ -1,0 +1,35 @@
+#survey-form {
+    display: grid;
+    grid-template-areas:
+        "personal_information"
+        "favorite_color_style"
+        "favorite_comic_style"
+        "animation_style"
+        "submit";
+    grid-gap: 10px;
+    row-gap: 20px;
+    background-color: white;
+    padding: 17px;
+    box-shadow: -10px 7px 20px black;
+    border: 3px solid black;
+    border-radius: 0.5em;
+}
+#group-personal-information {
+    grid-area: personal_information;
+    margin-bottom: 1em;
+}
+#group-favorite-color-style {
+    grid-area: favorite_color_style;
+    margin-bottom: 1em;
+}
+#group-favorite-comic-style {
+    grid-area: favorite_comic_style;
+    margin-bottom: 1em;
+}
+#group-animation-style {
+    grid-area: animation_style;
+    margin-bottom: 1em;
+}
+#group-submit {
+    grid-area: submit;
+}

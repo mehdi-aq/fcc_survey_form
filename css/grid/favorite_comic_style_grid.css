@@ -1,0 +1,39 @@
+#group-favorite-comic-style {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "radio-manga label-manga"
+        "radio-comic label-comic"
+        "radio-european label-european";
+    justify-items: stretch;
+}
+#group-favorite-comic-style > h3 {
+    grid-area: header;
+    text-align: center;
+}
+#manga {
+    grid-area: radio-manga;
+}
+#label-manga {
+    grid-area: label-manga;
+}
+#comic {
+    grid-area: radio-comic;
+}
+#label-comic {
+    grid-area: label-comic;
+}
+#european {
+    grid-area: radio-european;
+}
+#label-european {
+    grid-area: label-european;
+}
+#group-favorite-comic-style > input {
+    width: 1em;
+    justify-self: end;
+}
+#group-favorite-comic-style > label {
+    justify-self: stretch;
+    align-self: center;
+}

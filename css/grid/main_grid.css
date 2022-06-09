@@ -1,0 +1,19 @@
+#main-grid {
+    display: grid;
+    grid-template-areas:
+        "title title title title"
+        "main main main image";
+    column-gap: 20px;
+    width: 50em;
+    margin: auto;
+}
+.title-area {
+    grid-area: title;
+    text-align: center;
+}
+.image-area {
+    grid-area: images;
+}
+.main-area {
+    grid-area: main;
+}

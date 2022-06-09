@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Merienda One";
+    src: url("../font/MeriendaOne-Regular.ttf");
+}
+body {
+    font-family: 'Merienda One', cursive;
+    font-size: 1em;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 10%;
+    background-color: rgb(202, 190, 173);
+}
+h1 {
+    font-size: 5em;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(192, 192, 192);
+}
+#description {
+    font-size: 1.4em;
+    background-color: white;
+    padding: 12px;
+}
+#image-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0;
+}
+#image-grid > img {
+    width: 100%;
+    border-radius: 0.7em;
+    box-shadow: 0 0 30px black;
+    border: 1px solid black;
+    margin-right: 0;
+}
+#second-img {
+    grid-row: 3;
+}
+button {
+    background-color: rgb(192, 192, 192);
+    border: 0px;
+}
+button:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}

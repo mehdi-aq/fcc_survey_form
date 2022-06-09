@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fcc_survey_form</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/grid/main_grid.css" />
+        <link rel="stylesheet" href="css/grid/form_grid.css" />
+        <link rel="stylesheet" href="css/grid/personal_information_grid.css" />
+        <link rel="stylesheet" href="css/grid/favorite_color_grid.css" />
+        <link rel="stylesheet" href="css/grid/favorite_comic_style_grid.css" />
+        <link rel="stylesheet" href="css/grid/animation_style_grid.css" />
+        <link rel="stylesheet" href="css/grid/submit_grid.css" />
+        <link rel="stylesheet" href="css/main_style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+
+<body>
+<main>
+<div id="main-grid">
+<div class="title-area">
+    <h1 id="title">Art Preferences</h1>
+    <p id="description">
+        Tell us your preferences for ... I don't know (but please tell us)
+        I made this project from <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page" target="_blank">freecodecamp</a>
+    </p>
+</div>
+<div id="image-grid">
+    <img src="img/vanilla.gif"
+         alt="vanilla hair in the wind"/>
+    <img id="second-img" src="img/panpan_animated.gif"
+         alt="animator flip pages" />
+</div>
+<form id="survey-form" class="main-area">
+    <!-- Personal information -->
+    <div id="group-personal-information">
+        <h3>Your personal information</h3>
+        <label id="name-label" for="name">Name</label>
+        <input id="name" required type="text" placeholder="Enter your name" />
+        
+        <label id="email-label" for="email">Email</label>
+        <input id="email" required type="email" placeholder="your-email@example.com" />
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="3" max="100" placeholder="Enter your Age" />
+    </div>
+
+
+    <!-- Color style -->
+    <div id="group-favorite-color-style">
+        <label id="dropdown-label" for="dropdown">Your favorite color style</label>
+        <select id="dropdown">
+            <option>Color pencil</option>
+            <option>Watercolor</option>
+            <option>Gouache</option>
+            <option>Oil pastel</option>
+            <option>Dry pastel</option>
+        </select>
+    </div>
+
+
+    <!-- Comic style -->
+    <div id="group-favorite-comic-style">
+        <h3>Your favorite comic style</h3>
+        <label id="label-manga" for="manga">Manga</label>
+        <input id="manga" name="comic-style" type="radio" value="maga" />
+
+        <label id="label-comic" for="comic">Comic</label>
+        <input id="comic" name="comic-style" type="radio" value="comic" />
+
+        <label id="label-european" for="european">European style</label>
+        <input id="european" name="comic-style" type="radio" value="european" />
+    </div>
+
+
+    <!-- Animation style -->
+    <div id="group-animation-style">
+        <h3>Do you like these animation style</h3>
+        <label id="label-traditional-animation" for="traditional-animation">Traditional animation</label>
+        <input id="traditional-animation" type="checkbox" value="traditional-animation" />
+
+        <label id="label-anime" for="anime">Anime</label>
+        <input id="anime" type="checkbox" value="anime" />
+
+        <label id="label-cutout" for="cutout">Cutout</label>
+        <input id="cutout" type="checkbox" value="cutout" />
+
+        <label id="label-claymotion" for="claymotion">Claymotion</label>
+        <input id="claymotion" type="checkbox" value="claymotion" />
+    </div>
+
+    <div id="group-submit">
+        <h3>Feel free to add additional comment</h3>
+        <textarea></textarea>
+        <button id="submit" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+</main>
+</body>
+</html>

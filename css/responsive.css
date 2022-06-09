@@ -1,0 +1,21 @@
+@media (max-width: 830px) {
+    main {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 663px) {
+    #main-grid {
+    grid-template-areas:
+        "title title title"
+        "main main main";
+        width: 100%;
+    }
+    #image-grid {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        font-size: 0.6em;
+    }
+}
